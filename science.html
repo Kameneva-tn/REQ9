@@ -8,7 +8,11 @@
 <meta name="robots" content="noindex">
 <link rel="icon" href="assets/logo-req9.svg">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&amp;family=Roboto+Mono:wght@400;500&amp;display=swap">
-<style>body{margin:0;background:#020202}</style>
+<style>body{margin:0;background:#020202}.pg .tx{padding:14vh 4vw;border-top:1px solid var(--hair);display:grid;grid-template-columns:1fr 1.4fr;gap:6vw}.pg .tx .eyebrow{position:sticky;top:120px;align-self:start}.pg .tx .body{min-width:0}.pg .tx h2{font-weight:900;text-transform:uppercase;font-size:clamp(30px,3.6vw,58px);line-height:.95;letter-spacing:-.035em;margin:0 0 5vh}.pg .tx h3{font-weight:800;text-transform:uppercase;font-size:clamp(19px,1.7vw,26px);line-height:1.12;letter-spacing:-.01em;margin:7vh 0 2.4vh;color:var(--acid)}.pg .tx p,.pg .line-intro p{font-size:clamp(16px,1.25vw,19px);line-height:1.6;color:#CFD1D5;margin:0 0 1.1em;max-width:760px;font-weight:400;text-transform:none;letter-spacing:0}.pg .tx p b{color:#F7F7F7;font-weight:700}.pg .tx ul{list-style:none;margin:0 0 4vh;padding:0;border-top:1px solid var(--hair)}.pg .tx li{padding:18px 0;border-bottom:1px solid var(--hair);font-size:clamp(16px,1.25vw,19px);line-height:1.5;color:#CFD1D5}.pg .cite{font-family:var(--mono);font-size:12px;line-height:1.75;color:var(--dim);border-left:2px solid var(--acid);padding:4px 0 4px 16px;margin:2vh 0 4vh;max-width:760px;letter-spacing:.02em}.pg .cite a{color:var(--acid);text-decoration:underline}.pg .syn{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:3vh 0 4vh}.pg .syn>div{border:1px solid var(--hair);padding:26px}.pg .syn b{display:block;font-weight:900;text-transform:uppercase;font-size:clamp(17px,1.5vw,22px);letter-spacing:-.01em;color:var(--acid);margin-bottom:12px}.pg .syn p{margin:0}.pg .ph-box{border:1px dashed rgba(247,247,247,.3);padding:26px 28px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--dim);line-height:1.8}.pg .lead2{font-family:var(--disp);font-weight:700;font-size:clamp(22px,2.6vw,40px);line-height:1.18;letter-spacing:-.01em;max-width:1100px;margin:0 auto 5vh;text-transform:none;color:#F7F7F7}.pg .line-intro{display:grid;grid-template-columns:1fr 1fr;gap:2vh 4vw;margin:0 0 6vh;padding:0 4vw}.pg .line-eb{padding:0 4vw}.pg .row:hover .row-desc{color:#020202}.pg .scrub.long{font-size:clamp(24px,2.7vw,42px);line-height:1.08}.pg .row-desc{display:block;font-family:var(--disp);font-size:clamp(14px,1.1vw,17px);font-weight:500;font-style:normal;text-transform:none;letter-spacing:0;color:var(--dim);margin-top:12px;max-width:720px;line-height:1.45;-webkit-text-stroke:0}.pg .row-title small{font-size:.42em;letter-spacing:0;font-weight:600;vertical-align:middle;color:var(--dim)}.pg .foot .fb{flex:1 1 100%;font-family:var(--disp);font-size:13px;letter-spacing:0;text-transform:none;color:var(--dim);line-height:1.5;max-width:820px;font-weight:400}.pg .foot .fb a{color:var(--acid)}.pg .nav-logo-big{display:block;height:auto}
+@media (max-width:860px){.pg .tx{grid-template-columns:minmax(0,1fr);gap:4vh}.pg .tx .eyebrow{position:static}.pg .syn,.pg .line-intro{grid-template-columns:1fr}}
+.pg .row-more{position:absolute;right:calc(4vw + 72px);top:50%;max-width:min(380px,26vw);z-index:3;pointer-events:none;opacity:0;transform:translate(24px,-50%);transition:opacity .35s,transform .45s cubic-bezier(.7,0,.2,1);color:#020202;font-family:var(--disp);font-weight:600;font-size:16px;line-height:1.35;letter-spacing:-.005em;text-transform:none;text-align:left}.pg .row:hover .row-more,.pg .row:focus-visible .row-more{opacity:1;transform:translate(0,-50%)}
+@media (max-width:860px),(hover:none){.pg .row-more{position:static;max-width:none;opacity:1;transform:none;color:var(--dim);font-size:14px;padding:0 0 22px 72px;display:block}.pg .row:hover .row-more{transform:none;color:#020202}}
+</style>
 <link rel="stylesheet" href="assets/req9-lab.css">
 <script src="assets/req9-lab.js"></script>
 <script src="assets/dc-lite.js"></script>
@@ -18,145 +22,150 @@
 <div class="pg" id="top" data-dcref="rootRef">
 <div class="grain" aria-hidden="true"></div>
 <div class="progress" aria-hidden="true"></div>
-
 <header class="nav">
-<a class="nav-brand" href="index.html" aria-label="REQ9 — головна"><img src="assets/logo-req9.svg" alt="REQ9" style="height: 20px; width: auto; display: block"><em>// Amino Code™</em></a>
-<nav class="nav-links" aria-label="Головне меню">
+<a class="nav-brand" href="index.html" aria-label="REQ9"><img src="assets/logo-req9.svg" alt="REQ9" style="height: 20px; width: auto; display: block"><em>// Amino Code™</em></a>
+<nav class="nav-links" aria-label="Меню">
 <a href="index.html">Головна</a>
-<a href="product.html">Продукти</a>
+<a href="index.html#line">Продукти</a>
 <a class="cur" href="science.html">Наука</a>
 <a href="distributors.html">Дистриб’ютори</a>
-<a href="about.html">Про бренд</a>
+<a href="about.html">Про нас</a>
 </nav>
-<a class="btn btn-s nav-cta" href="distributors.html" data-magnet="1">Отримати код</a>
+<a class="btn btn-s nav-cta" href="distributors.html" data-magnet="1">Знайти дистриб’ютора</a>
 </header>
-
-<!-- 3.1 intro -->
-<section class="lhero top">
-<div class="scroll-cue">Scroll</div>
-<p class="eyebrow">REQ9 / Наука і технології</p>
-<h1 style="font-weight: 900; text-transform: uppercase; font-size: clamp(60px, 10.6vw, 170px); line-height: .86; letter-spacing: -.045em; margin-top: 3vh" aria-label="Дві фракції ГК. Дев’ять амінокислот. Одна формула.">
-<span class="ln lh"><span>Дві <span class="acid">фракції.</span></span></span>
-<span class="ln lh"><span class="hollow">Дев’ять кодів.</span></span>
-<span class="ln lh"><span>Одна формула<span class="acid">.</span></span></span>
+<section class="lhero top" style="min-height: 760px">
+<p class="eyebrow">01 // Вступ до технології</p>
+<h1 style="font-weight: 900; text-transform: uppercase; font-size: clamp(52px, 9.4vw, 150px); line-height: .9; letter-spacing: -.045em; margin-top: 3vh" aria-label="КОМПЛЕКСНА КОНЦЕПЦІЯ ReQ9">
+<span class="ln lh"><span>Комплексна</span></span>
+<span class="ln lh"><span><span class="hollow">концепція</span></span></span>
+<span class="ln lh"><span>ReQ<span class="acid">9</span></span></span>
 </h1>
 <div class="hero-sub">
-<p class="rv"><b>Комплексна концепція ReQ9.</b> Дві визначені фракції некрослінкованої гіалуронової кислоти — 1,2 і 2,4 MDa, 25 мг/мл — та <b>Amino Code</b>: функціонально організований комплекс із 9 амінокислот.</p>
-<div class="hero-meta rv">Фракцій ГК <i data-v="02">02</i><br>Амінокислот <i data-v="09">09</i><br>Джерел <i data-v="03">03</i><br>ГК <i>50 мг</i> / 2 мл</div>
+<p class="rv">Формула ReQ9 розроблена на основі поєднання двох визначених фракцій некрослінкованої гіалуронової кислоти з молекулярною масою 1,2 МДа та 2,4 МДа. Загальна концентрація ГК становить 25 мг/мл — 50 мг у шприці об’ємом 2 мл.</p>
 </div>
-</section>
 
-<!-- key illustration -->
-<section class="band" aria-label="Електронна мікроскопія дермального матриксу">
-<img src="assets/scope.jpg" alt="Електронна мікроскопія: частинки Amino Code вбудовуються у волокна дермального матриксу">
-<div class="shade"></div><div class="bx"></div><div class="by"></div><div class="bb"></div>
-<div class="bt"><span>Specimen / SEM · 10 µm</span><span>Matrix interface // 1:1</span></div>
-<div class="bf"><h3 class="rv"><span class="hollow">Код —</span> <span class="acid">база.</span></h3><span class="count rv" style="color: #F7F7F7">ECM · позаклітинний матрикс</span></div>
 </section>
-
-<!-- 3.2 R&D logic -->
+<section class="band" aria-label="Електронна мікроскопія дермального матриксу"><img src="assets/scope-base.jpg" alt="" style="object-position: 50% 40%; filter: grayscale(.3) brightness(.8)"><div class="shade"></div></section>
 <section class="mani">
-<p class="eyebrow">3.2 // Розробка</p>
+<p class="eyebrow">Amino Code™</p>
 <div>
-<h3 class="scrub"><span class="w">Код</span> <span class="w">—</span> <span class="w">не</span> <span class="w">копія.</span> <span class="dimw"><span class="w">Це</span> <span class="w">точна</span> <span class="w">формула,</span></span> <em><span class="w">виведена</span> <span class="w">під</span> <span class="w">задачу.</span></em></h3>
+<h3 class="scrub long"><span class="w">Amino</span> <span class="w">Code™</span> <span class="w">—</span> <span class="w">амінокислотний</span> <span class="w">код</span> <span class="w">дермального</span> <span class="w">матриксу,</span> <span class="w">функціонально</span> <span class="w">організований</span> <span class="w">комплекс</span> <span class="w">із</span> <span class="w">9</span> <span class="w">амінокислот:</span> <span class="w">гліцину,</span> <span class="w">проліну,</span> <span class="w">лізину,</span> <span class="w">лейцину,</span> <span class="w">ізолейцину,</span> <span class="w">валіну,</span> <span class="w">аланіну,</span> <span class="w">серину</span> <span class="w">та</span> <span class="w">цистеїну.</span></h3>
 <div class="mani-rules">
-<div class="mani-rule"><b>R.01</b><p><strong><span class="wm"><span>Прогалина.</span></span></strong> <span class="w">Стимулятори</span> <span class="w">дають</span> <span class="w">тканині</span> <span class="w">команду</span> <span class="w">оновлюватись,</span> <span class="w">але</span> <span class="w">не</span> <span class="w">матеріал,</span> <span class="w">з</span> <span class="w">якого</span> <span class="w">вона</span> <span class="w">будує</span> <span class="w">відповідь.</span></p></div>
-<div class="mani-rule"><b>R.02</b><p><strong><span class="wm"><span>Метод.</span></span></strong> <span class="w">Різні</span> <span class="w">високомолекулярні</span> <span class="w">фракції</span> <span class="w">ГК</span> <span class="w">демонструють</span> <span class="w">взаємодоповнюючі</span> <span class="w">властивості:</span> <span class="w">1,2</span> <span class="w">MDa</span> <span class="w">асоціюється</span> <span class="w">із</span> <span class="w">захистом</span> <span class="w">і</span> <span class="w">гомеостазом,</span> <span class="w">2,4</span> <span class="w">MDa</span> <span class="w">—</span> <span class="w">з</span> <span class="w">клітинним</span> <span class="w">оновленням.</span></p></div>
-<div class="mani-rule"><b>R.03</b><p><strong><span class="wm"><span>Формула.</span></span></strong> <span class="w">9</span> <span class="w">амінокислот</span> <span class="w">формують</span> <span class="w">локальний</span> <span class="w">пул,</span> <span class="w">біологічно</span> <span class="w">релевантний</span> <span class="w">для</span> <span class="w">синтезу</span> <span class="w">й</span> <span class="w">оновлення</span> <span class="w">структурних</span> <span class="w">білків</span> <span class="w">матриксу.</span></p></div>
-<div class="mani-rule"><b>R.04</b><p><strong><span class="wm"><span>Виробництво.</span></span></strong> <span class="w">[Етапи</span> <span class="w">розробки</span> <span class="w">й</span> <span class="w">особливості</span> <span class="w">виробництва</span> <span class="w">—</span> <span class="w">текст</span> <span class="w">уточнюється]</span></p></div>
+<div class="mani-rule"><b>R.01</b><p><span class="w">Їхня</span> <span class="w">роль</span> <span class="w">виходить</span> <span class="w">далеко</span> <span class="w">за</span> <span class="w">межі</span> <span class="w">простого</span> <span class="w">«будівельного</span> <span class="w">матеріалу».</span> <span class="w">Разом</span> <span class="w">вони</span> <span class="w">формують</span> <span class="w">розширений</span> <span class="w">локальний</span> <span class="w">пул</span> <span class="w">амінокислот,</span> <span class="w">біологічно</span> <span class="w">релевантних</span> <span class="w">для</span> <span class="w">синтезу</span> <span class="w">та</span> <span class="w">оновлення</span> <span class="w">структурних</span> <span class="w">білків</span> <span class="w">дермального</span> <span class="w">матриксу.</span> <span class="w">Саме</span> <span class="w">тому</span> <span class="w">Amino</span> <span class="w">Code™</span> <span class="w">є</span> <span class="w">однією</span> <span class="w">з</span> <span class="w">ключових</span> <span class="w">технологій</span> <span class="w">ReQ9,</span> <span class="w">що</span> <span class="w">поєднує</span> <span class="w">продуманий</span> <span class="w">склад</span> <span class="w">препарату</span> <span class="w">з</span> <span class="w">процесами</span> <span class="w">неоколагенезу</span> <span class="w">та</span> <span class="w">фізіологічного</span> <span class="w">ремоделювання</span> <span class="w">позаклітинного</span> <span class="w">матриксу</span> <span class="w">(ECM).</span></p></div>
 </div>
 </div>
 </section>
-
-<div class="ticker" aria-hidden="true">
-<div class="ticker-track" data-dir="r">
-<span>Колаген</span><span class="ghost">Еластин</span><span>Метаболізм і захист</span><span class="ghost">Gly–Pro–Lys</span>
-<span>Колаген</span><span class="ghost">Еластин</span><span>Метаболізм і захист</span><span class="ghost">Gly–Pro–Lys</span>
-<span>Колаген</span><span class="ghost">Еластин</span><span>Метаболізм і захист</span><span class="ghost">Gly–Pro–Lys</span>
+<section class="tx">
+<p class="eyebrow">02 // Розробка та виробництво</p>
+<div class="body rv">
+<p>Вибір саме цих молекулярних мас має наукове обґрунтування: згідно з даними, наведеними в матеріалах виробника, різні високомолекулярні фракції ГК демонструють взаємодоповнюючі біологічні властивості. Фракція близько 1,2 МДа асоціюється насамперед із захистом клітинного середовища та підтриманням гомеостазу, тоді як фракція близько 2,4 МДа — з підтримкою процесів клітинного оновлення та активності.</p>
+</div>
+</section>
+<section class="tx">
+<p class="eyebrow">03 // Медичний опис і компоненти</p>
+<div class="body rv">
+<p>В основі Amino Code™ — структурна тріада Gly–Pro–Lys: гліцин + пролін + лізин. Це амінокислоти, тісно пов’язані зі структурою та формуванням колагену.</p>
+<p>Гліцин займає кожну третю позицію в первинній послідовності колагену та є необхідним для формування його щільної потрійної спіралі. Пролін забезпечує характерну конформаційну стабільність колагенового ланцюга та є попередником гідроксипроліну. Лізин відіграє важливу роль у посттрансляційному дозріванні колагену та формуванні міжмолекулярних зв’язків, необхідних для організації зрілих колагенових фібрил.</p>
+<p>Таким чином, Gly–Pro–Lys формують раціональну біохімічну основу колаген-орієнтованої дії Amino Code™.</p>
+<p>Інші амінокислоти розширюють функціональний потенціал комплексу. Лейцин, ізолейцин і валін (BCAA) доповнюють амінокислотний пул, залучений у білковий метаболізм. Аланін, поряд із гліцином, проліном і валіном, входить до характерного амінокислотного профілю еластину. Серин бере участь у клітинному метаболізмі та тісно пов’язаний з обміном гліцину, тоді як цистеїн є компонентом тіолових систем і попередником глутатіону.</p>
+<p>Саме така комбінація дозволяє розглядати Amino Code™ значно ширше, ніж просто комплекс «амінокислот для колагену». Це продумана система, що поєднує три взаємопов’язані напрями.</p>
+</div>
+</section>
+<section class="index" id="aa" style="border-top: 1px solid rgba(247,247,247,.14)">
+<div class="index-head">
+<h2 class="rv">Amino Code™</h2>
+<div class="count rv">9</div>
+</div>
+<div class="rows">
+<div class="row" style="--row-c: #E6FF6B"><div class="row-fill"></div><div class="row-inner"><span class="row-no">01</span><span class="row-title">Гліцин</span><span class="row-meta"><span class="row-tags"><span class="tag status">Gly–Pro–Lys</span></span></span></div><span class="row-more">Гліцин займає кожну третю позицію в первинній послідовності колагену та є необхідним для формування його щільної потрійної спіралі.</span></div>
+<div class="row" style="--row-c: #E6FF6B"><div class="row-fill"></div><div class="row-inner"><span class="row-no">02</span><span class="row-title">Пролін</span><span class="row-meta"><span class="row-tags"><span class="tag status">Gly–Pro–Lys</span></span></span></div><span class="row-more">Пролін забезпечує характерну конформаційну стабільність колагенового ланцюга та є попередником гідроксипроліну.</span></div>
+<div class="row" style="--row-c: #E6FF6B"><div class="row-fill"></div><div class="row-inner"><span class="row-no">03</span><span class="row-title">Лізин</span><span class="row-meta"><span class="row-tags"><span class="tag status">Gly–Pro–Lys</span></span></span></div><span class="row-more">Лізин відіграє важливу роль у посттрансляційному дозріванні колагену та формуванні міжмолекулярних зв’язків, необхідних для організації зрілих колагенових фібрил.</span></div>
+<div class="row" style="--row-c: #F7F7F7"><div class="row-fill"></div><div class="row-inner"><span class="row-no">04</span><span class="row-title">Лейцин</span><span class="row-meta"><span class="row-tags"><span class="tag status">BCAA</span></span></span></div><span class="row-more">Лейцин, ізолейцин і валін (BCAA) доповнюють амінокислотний пул, залучений у білковий метаболізм.</span></div>
+<div class="row" style="--row-c: #F7F7F7"><div class="row-fill"></div><div class="row-inner"><span class="row-no">05</span><span class="row-title">Ізолейцин</span><span class="row-meta"><span class="row-tags"><span class="tag status">BCAA</span></span></span></div><span class="row-more">Лейцин, ізолейцин і валін (BCAA) доповнюють амінокислотний пул, залучений у білковий метаболізм.</span></div>
+<div class="row" style="--row-c: #F7F7F7"><div class="row-fill"></div><div class="row-inner"><span class="row-no">06</span><span class="row-title">Валін</span><span class="row-meta"><span class="row-tags"><span class="tag status">BCAA</span></span></span></div><span class="row-more">Лейцин, ізолейцин і валін (BCAA) доповнюють амінокислотний пул, залучений у білковий метаболізм.</span></div>
+<div class="row" style="--row-c: #B9BCC1"><div class="row-fill"></div><div class="row-inner"><span class="row-no">07</span><span class="row-title">Аланін</span><span class="row-meta"><span class="row-tags"><span class="tag status">Еластин</span></span></span></div><span class="row-more">Аланін, поряд із гліцином, проліном і валіном, входить до характерного амінокислотного профілю еластину.</span></div>
+<div class="row" style="--row-c: #B9BCC1"><div class="row-fill"></div><div class="row-inner"><span class="row-no">08</span><span class="row-title">Серин</span><span class="row-meta"><span class="row-tags"><span class="tag status">Метаболізм</span></span></span></div><span class="row-more">Серин бере участь у клітинному метаболізмі та тісно пов’язаний з обміном гліцину</span></div>
+<div class="row" style="--row-c: #B9BCC1"><div class="row-fill"></div><div class="row-inner"><span class="row-no">09</span><span class="row-title">Цистеїн</span><span class="row-meta"><span class="row-tags"><span class="tag status">Глутатіон</span></span></span></div><span class="row-more">цистеїн є компонентом тіолових систем і попередником глутатіону.</span></div>
+</div>
+</section>
+<section class="mani" id="mech">
+<p class="eyebrow">04 // Механізм дії</p>
+<div>
+<h3 class="scrub"><span class="w">AMINO</span> <span class="w">CODE</span> <span class="w">формула</span> <span class="w">дермального</span> <span class="w">матриксу</span></h3>
+<div class="mani-rules">
+<div class="mani-rule"><b>R.01</b><p><span class="w">Склад</span> <span class="w">амінокислот</span> <span class="w">повністю</span> <span class="w">відтворює</span> <span class="w">природну</span> <span class="w">структуру</span> <span class="w">дермального</span> <span class="w">матриксу,</span> <span class="w">а</span> <span class="w">система</span> <span class="w">дуальної</span> <span class="w">гіалуронової</span> <span class="w">кислоти</span> <span class="w">дозволяє</span> <span class="w">досягти</span> <span class="w">швидкого</span> <span class="w">та</span> <span class="w">пролонгованого</span> <span class="w">зволоження.</span></p></div>
+<div class="mani-rule"><b>R.02</b><p><span class="w">Повна</span> <span class="w">біосумісність</span> <span class="w">неповторного</span> <span class="w">складу</span> <span class="w">9</span> <span class="w">амінокислот</span> <span class="w">у</span> <span class="w">препараті</span> <span class="w">та</span> <span class="w">дермального</span> <span class="w">матриксу</span> <span class="w">запускає</span> <span class="w">надшвидкий</span> <span class="w">синтез</span> <span class="w">власного</span> <span class="w">колагену,</span> <span class="w">забезпечуючи</span> <span class="w">інтенсивне</span> <span class="w">відновлення</span> <span class="w">тканин.</span></p></div>
+<div class="mani-rule"><b>R.03</b><p><strong><span class="wm"><span>Результат</span></span> <span class="wm"><span>-</span></span> <span class="wm"><span>прискорений</span></span> <span class="wm"><span>неоколагенез.</span></span></strong> <span class="w">Запуск</span> <span class="w">неоколагенезу</span> <span class="w">прискорюється,</span> <span class="w">що</span> <span class="w">дає</span> <span class="w">швидкий,</span> <span class="w">помітний</span> <span class="w">та</span> <span class="w">стійкий</span> <span class="w">ліфтинг-ефект.</span></p></div>
 </div>
 </div>
-
-<!-- 3.3 components -->
-<section class="index {{hov.comp}}" id="components">
+</section>
+<section class="index {{hov}}" id="research" style="border-top: 1px solid rgba(247,247,247,.14)">
 <div class="wash" style="--wash-c: #E6FF6B55"></div>
 <div class="ghost-no">{{ghost}}</div>
 <div class="index-head">
-<h2 class="rv">Структура<br><em>складу</em></h2>
-<div class="count rv">3.3 // Amino Code™<br>4 групи · 9 амінокислот<br>Наведіть, щоб розглянути роль</div>
+<h2 class="rv">НАУКОВЕ ОБҐРУНТУВАННЯ ФОРМУЛИ REQ9 AMINO CODE</h2>
+<div class="count rv">05 // Ефективність і дослідження</div>
 </div>
 <div class="rows">
-<a class="row" href="#components" style="--row-c: #E6FF6B" data-dcev-mouseenter="en.g1" data-dcev-mouseleave="lv"><div class="row-fill"></div><div class="row-inner"><span class="row-no">GRP/001</span><span class="row-title">Тріада колагену</span><span class="row-meta"><span class="row-tags"><span class="tag status">Колаген</span><span class="tag">GLY · PRO · LYS</span></span><span>Потрійна спіраль / стабільність / зв’язки фібрил</span></span></div><span class="row-arrow" aria-hidden="true">↗</span></a>
-<a class="row" href="#components" style="--row-c: #F7F7F7" data-dcev-mouseenter="en.g2" data-dcev-mouseleave="lv"><div class="row-fill"></div><div class="row-inner"><span class="row-no">GRP/002</span><span class="row-title">BCAA</span><span class="row-meta"><span class="row-tags"><span class="tag status">Метаболізм</span><span class="tag">LEU · ILE · VAL</span></span><span>Доповнюють пул, залучений у білковий метаболізм</span></span></div><span class="row-arrow" aria-hidden="true">↗</span></a>
-<a class="row" href="#components" style="--row-c: #B9BCC1" data-dcev-mouseenter="en.g3" data-dcev-mouseleave="lv"><div class="row-fill"></div><div class="row-inner"><span class="row-no">GRP/003</span><span class="row-title">Профіль еластину</span><span class="row-meta"><span class="row-tags"><span class="tag status">Еластин</span><span class="tag">ALA (+ GLY · PRO · VAL)</span></span><span>Характерний амінокислотний профіль еластину</span></span></div><span class="row-arrow" aria-hidden="true">↗</span></a>
-<a class="row" href="#components" style="--row-c: #B9BCC1" data-dcev-mouseenter="en.g4" data-dcev-mouseleave="lv"><div class="row-fill"></div><div class="row-inner"><span class="row-no">GRP/004</span><span class="row-title">Метаболізм і захист</span><span class="row-meta"><span class="row-tags"><span class="tag status">Захист</span><span class="tag">SER · CYS</span></span><span>Обмін гліцину / попередник глутатіону</span></span></div><span class="row-arrow" aria-hidden="true">↗</span></a>
-</div>
-<p class="count" style="text-align: left; padding: 22px 4vw 0">Amino Code™ — не просто «амінокислоти для колагену»: система трьох напрямів — колаген, еластин, метаболізм і захист.</p>
-</section>
-
-<!-- 3.4 mechanism -->
-<section class="mani" style="margin-top: 14vh">
-<p class="eyebrow">3.4 // Механізм дії</p>
-<div>
-<h3 class="scrub"><span class="w">Спершу</span> <span class="w">—</span> <span class="w">гідратація.</span> <span class="dimw"><span class="w">Далі</span> <span class="w">—</span></span> <em><span class="w">оновлення</span> <span class="w">матриксу.</span></em></h3>
-<div class="bp rv">
-<span class="bp-tag">Схема дії · статична версія</span>
-<img src="assets/syringe-blueprint.png" alt="Креслення шприца REQ9 Amino Code">
-</div>
-<div class="mani-rules">
-<div class="mani-rule"><b>T.01</b><p><strong><span class="wm"><span>Швидкий</span></span> <span class="wm"><span>вимір.</span></span></strong> <span class="w">Система</span> <span class="w">дуальної</span> <span class="w">ГК</span> <span class="w">підтримує</span> <span class="w">гідратацію</span> <span class="w">тканини</span> <span class="w">і</span> <span class="w">раннє</span> <span class="w">покращення</span> <span class="w">якості</span> <span class="w">шкіри.</span></p></div>
-<div class="mani-rule"><b>T.02</b><p><strong><span class="wm"><span>Пролонгований</span></span> <span class="wm"><span>вимір.</span></span></strong> <span class="w">Амінокислотний</span> <span class="w">пул</span> <span class="w">підтримує</span> <span class="w">синтетичну</span> <span class="w">активність</span> <span class="w">фібробластів</span> <span class="w">і</span> <span class="w">неоколагенез.</span></p></div>
-<div class="mani-rule"><b>T.03</b><p><strong><span class="wm"><span>Результат.</span></span></strong> <span class="w">Тканина,</span> <span class="w">якій</span> <span class="w">є</span> <span class="w">з</span> <span class="w">чого</span> <span class="w">будувати,</span> <span class="w">відповідає</span> <span class="w">на</span> <span class="w">стимул</span> <span class="w">процедури</span> <span class="w">повніше.</span></p></div>
-</div>
+<a class="row" href="https://doi.org/10.1002/cbf.290120409" target="_blank" rel="noopener" style="--row-c: #E6FF6B" data-dcev-mouseenter="en.r1" data-dcev-mouseleave="lv"><div class="row-fill"></div><div class="row-inner"><span class="row-no">01</span><span class="row-title" style="font-size: clamp(24px, 3.4vw, 52px)">Presti D. &amp; Scott J.E. (1994)</span><span class="row-meta"><span class="row-tags"><span class="tag status">ГК 1,2 МДа</span></span><span>Відкрити дослідження</span></span></div><span class="row-arrow" aria-hidden="true">↗</span><span class="row-more">ГК 1,2 МДа ефективно захищає фібробласти від пошкодження в умовах оксидативного стресу.</span></a>
+<a class="row" href="https://doi.org/10.1016/S0014-5793(99)00731-0" target="_blank" rel="noopener" style="--row-c: #E6FF6B" data-dcev-mouseenter="en.r2" data-dcev-mouseleave="lv"><div class="row-fill"></div><div class="row-inner"><span class="row-no">02</span><span class="row-title" style="font-size: clamp(24px, 3.4vw, 52px)">Neumann A. et al. (1999)</span><span class="row-meta"><span class="row-tags"><span class="tag status">ГК</span></span><span>Відкрити дослідження</span></span></div><span class="row-arrow" aria-hidden="true">↗</span><span class="row-more">Високомолекулярна ГК пригнічує запальні цитокіни (IL-1α, IL-6, TNF-α) та підтримує клітинний гомеостаз.</span></a>
+<a class="row" href="https://doi.org/10.3390/ph14040301" target="_blank" rel="noopener" style="--row-c: #F7F7F7" data-dcev-mouseenter="en.r3" data-dcev-mouseleave="lv"><div class="row-fill"></div><div class="row-inner"><span class="row-no">03</span><span class="row-title" style="font-size: clamp(24px, 3.4vw, 52px)">Kawano Y. et al. (2021)</span><span class="row-meta"><span class="row-tags"><span class="tag status">ГК 2,4 МДа</span></span><span>Відкрити дослідження</span></span></div><span class="row-arrow" aria-hidden="true">↗</span><span class="row-more">ГК 2,4 МДа значуще посилює проліферацію та міграцію дермальних фібробластів людини (NHDF) і кератиноцитів.</span></a>
 </div>
 </section>
-
-<!-- 3.5 research -->
-<section class="index {{hov.res}}" id="research" style="border-top: 1px solid rgba(247,247,247,.14)">
-<div class="wash" style="--wash-c: #E6FF6B55"></div>
-<div class="ghost-no">{{ghost}}</div>
-<div class="index-head">
-<h2 class="rv">Ефективність<br><em>і дослідження</em></h2>
-<div class="count rv">3.5 // Наукове обґрунтування<br>3 дослідження · 2 фракції ГК<br>Наведіть, щоб прочитати висновок</div>
-</div>
-<div class="rows">
-<a class="row" href="#research" style="--row-c: #E6FF6B" data-dcev-mouseenter="en.r1" data-dcev-mouseleave="lv"><div class="row-fill"></div><div class="row-inner"><span class="row-no">SRC/001</span><span class="row-title">Захист</span><span class="row-meta"><span class="row-tags"><span class="tag status">1,2 MDa</span><span class="tag">1994</span></span><span>Presti, Scott / Cell Biochem Funct / DOI 10.1002/cbf.290120409</span></span></div><span class="row-more"><i>Висновок</i>Захист клітин від вільнорадикального пошкодження</span><span class="row-arrow" aria-hidden="true">↗</span></a>
-<a class="row" href="#research" style="--row-c: #E6FF6B" data-dcev-mouseenter="en.r2" data-dcev-mouseleave="lv"><div class="row-fill"></div><div class="row-inner"><span class="row-no">SRC/002</span><span class="row-title">Гомеостаз</span><span class="row-meta"><span class="row-tags"><span class="tag status">1,2 MDa</span><span class="tag">1999</span></span><span>Neumann et al. / FEBS Letters / DOI 10.1016/S0014-5793(99)00731-0</span></span></div><span class="row-more"><i>Висновок</i>Клітинний гомеостаз, модуляція запальних сигналів</span><span class="row-arrow" aria-hidden="true">↗</span></a>
-<a class="row" href="#research" style="--row-c: #F7F7F7" data-dcev-mouseenter="en.r3" data-dcev-mouseleave="lv"><div class="row-fill"></div><div class="row-inner"><span class="row-no">SRC/003</span><span class="row-title">Оновлення</span><span class="row-meta"><span class="row-tags"><span class="tag status">2,4 MDa</span><span class="tag">2021</span></span><span>Kawano et al. / Pharmaceuticals / DOI 10.3390/ph14040301</span></span></div><span class="row-more"><i>Висновок</i>Клітинна активність, оновлення матриксу</span><span class="row-arrow" aria-hidden="true">↗</span></a>
-</div>
-<div class="pass rv" style="margin-top: 8vh; grid-template-columns: repeat(2, minmax(0, 1fr))">
-<div>1,2 MDa — захист + гомеостаз<b>Менше вільнорадикального пошкодження, модуляція запальних шляхів</b></div>
-<div>2,4 MDa — оновлення + активність<b>Фібробласти, проліферація й міграція кератиноцитів, реепітелізація</b></div>
-</div>
-<p class="count" style="text-align: left; padding: 0 4vw">Дослідження стосуються фракцій ГК відповідної молекулярної маси, а не готового препарату.</p>
-</section>
-
-<section class="cta">
-<h4 class="rv"><span class="hollow">Від формули</span><span>до <span class="acid">продукту.</span></span></h4>
-<p class="rv">Технічна карта, склад і документи Amino Code.</p>
-<div class="rv" style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap">
-<a class="btn" href="product.html" data-magnet="1"><span>Детальніше про продукт</span><i>→</i></a>
-<a class="btn btn-o" href="product.html#docs"><span>Завантажити PDF</span><i>↓</i></a>
+<section class="tx" id="studies">
+<p class="eyebrow">ГК 1,2 МДа · ГК 2,4 МДа</p>
+<div class="body rv">
+<p>Одним із ключових обґрунтувань використання фракції 1,2 МДа є дослідження Presti D. та Scott J.E., у якому порівнювали гіалуронову кислоту з молекулярними масами 176, 668 та 1218 кДа.</p>
+<p>В експериментальній моделі фібробласти піддавали оксидативному стресу, спричиненому гідроксильними радикалами. ГК молекулярної маси 1218 кДа (1,218 МДа) захищала клітини від пошкодження та продемонструвала більш виражений захисний ефект порівняно з фракціями 176 і 668 кДа. Захисна дія також посилювалася зі збільшенням концентрації ГК.</p>
+<p>Таким чином, фракція 1,2 МДа у ReQ9 має наукове обґрунтування як компонент, пов’язаний із підтримкою клітин в умовах оксидативного стресу та захистом від вільнорадикального пошкодження.</p>
+<div class="cite">Presti D., Scott J.E.<br>Hyaluronan-mediated protective effect against cell damage caused by enzymatically produced hydroxyl (OH·) radicals is dependent on hyaluronan molecular mass.<br>Cell Biochemistry and Function. 1994;12(4):281–288. DOI: 10.1002/cbf.290120409.<br><a href="https://doi.org/10.1002/cbf.290120409" target="_blank" rel="noopener">Відкрити дослідження ↗</a></div>
+<h3>ГК 1,2 МДа: підтримка клітинного гомеостазу</h3>
+<p>Додатковий механізм дії високомолекулярної ГК був продемонстрований у дослідженні Neumann A. та співавторів.</p>
+<p>Автори встановили, що високомолекулярна ГК пригнічувала активацію транскрипційного фактора NF-κB, індуковану кінцевими продуктами глікації (AGEs), а також знижувала експресію пов’язаних із цим сигнальним шляхом прозапальних цитокінів IL-1α, IL-6 та TNF-α.</p>
+<p>Ці дані доповнюють біологічне обґрунтування фракції 1,2 МДа та дозволяють пов’язувати її не тільки з гідратаційними властивостями ГК, а й із підтримкою клітинного гомеостазу та модуляцією прозапальних сигнальних процесів.</p>
+<div class="cite">Neumann A., Schinzel R., Palm D., Riederer P., Münch G.<br>High molecular weight hyaluronic acid inhibits advanced glycation endproduct-induced NF-kappaB activation and cytokine expression.<br>FEBS Letters. 1999;453(3):283–287. DOI: 10.1016/S0014-5793(99)00731-0.<br><a href="https://doi.org/10.1016/S0014-5793(99)00731-0" target="_blank" rel="noopener">Відкрити дослідження ↗</a></div>
+<h3>ГК 2,4 МДа: фібробласти та оновлення дермального матриксу</h3>
+<p>Другий компонент формули ReQ9 — ГК 2,4 МДа — має взаємодоповнюючий біологічний профіль.</p>
+<p>У дослідженні Kawano Y. та співавторів вивчалася ГК молекулярної маси 2290 кДа (2,29 МДа), що є близькою до фракції 2,4 МДа.</p>
+<p>В експерименті ГК 2290 кДа значуще посилювала проліферацію нормальних дермальних фібробластів людини (NHDF). Автори також досліджували міграцію клітин та експресію генів, пов’язаних із процесами відновлення тканин.</p>
+<p>Фібробласти відіграють фундаментальну роль у дермі, оскільки беруть участь у синтезі та ремоделюванні позаклітинного матриксу — структурного середовища, від якого залежать організація та механічні характеристики шкіри.</p>
+<p>Тому фракція 2,4 МДа у формулі ReQ9 розглядається як компонент, наукове обґрунтування якого пов’язане з підтримкою клітинної активності та процесів оновлення дермального матриксу.</p>
+<h3>ГК 2,4 МДа: кератиноцити та процеси оновлення</h3>
+<p>У тому ж дослідженні Kawano та співавторів було показано, що збільшення молекулярної маси та концентрації ГК асоціювалося з посиленням проліферації та міграції кератиноцитів.</p>
+<p>Автори також пов’язують ГК 2290 кДа з потенційною підтримкою реепітелізації — процесу, під час якого епідермальні клітини проліферують і мігрують, забезпечуючи відновлення цілісності епітелію.</p>
+<p>Таким чином, друга високомолекулярна фракція доповнює захисний профіль 1,2 МДа механізмами, пов’язаними з фібробластами, кератиноцитами та фізіологічними процесами оновлення тканин.</p>
+<div class="cite">Kawano Y., Patrulea V., Sublet E. et al.<br>Wound Healing Promotion by Hyaluronic Acid: Effect of Molecular Weight on Gene Expression and In Vivo Wound Closure.<br>Pharmaceuticals. 2021;14(4):301. DOI: 10.3390/ph14040301.<br><a href="https://doi.org/10.3390/ph14040301" target="_blank" rel="noopener">Відкрити дослідження ↗</a></div>
 </div>
 </section>
-
+<section class="tx" id="synergy">
+<p class="eyebrow">REQ9 AMINO CODE</p>
+<div class="body rv">
+<h2>СИНЕРГІЯ ДВОХ МОЛЕКУЛЯРНИХ МАС</h2>
+<p>Наукова концепція REQ9 полягає саме у поєднанні двох високомолекулярних фракцій ГК з різними, але взаємодоповнюючими біологічними профілями:</p>
+<div class="syn"><div><b>1,2 МДа — ЗАХИСТ + ГОМЕОСТАЗ</b><p>Захист від оксидативного стресу, зменшення вільнорадикального пошкодження та модуляція прозапальних сигнальних шляхів.</p></div><div><b>2,4 МДа — ОНОВЛЕННЯ + КЛІТИННА АКТИВНІСТЬ</b><p>Підтримка активності дермальних фібробластів, проліферації та міграції кератиноцитів і процесів реепітелізації.</p></div></div>
+<p>Цей подвійний механізм формує основу концепції ReQ9: одночасна підтримка гідратації та гомеостазу тканин із підтримкою природних процесів клітинного оновлення.</p>
+<h3>АМІНОКИСЛОТНИЙ КОМПЛЕКС</h3>
+<p>Дію двох фракцій ГК доповнює комплекс із 9 амінокислот: L-ізолейцину, L-лізину, L-проліну, L-валіну, гліцину, L-серину, L-аланіну, L-лейцину та L-цистеїну. Загальний вміст амінокислот у вихідній документації становить приблизно 28–30 мг на 2 мл.</p>
+<p>Гліцин і пролін забезпечують структурні компоненти колагену, лізин пов’язаний з його організацією та стабільністю, цистеїн — з антиоксидантним захистом. Інші амінокислоти комплексу беруть участь у процесах клітинного метаболізму, синтезу білка, підтримки водного балансу та клітинної енергетики.</p>
+<div style="margin-top: 5vh"><a class="btn" href="product.html" data-magnet="1"><span>Детальніше про продукт</span><i>→</i></a></div>
+</div>
+</section>
 <footer class="foot">
 <img src="assets/logo-reqpharma.svg" alt="REQ PHARMA" style="height: 16px; width: auto; display: block">
-<span>© 2026 REQ Pharma · Made in Italy · Медичний виріб класу III</span>
-<div class="socials"><a href="about.html">info@req9.com</a><a href="about.html">Instagram</a><a href="about.html">Facebook</a><a href="about.html">LinkedIn</a><a href="#top">Політика конфіденційності</a><a href="#top">Умови</a><a href="#top">Cookies</a></div>
-<a href="#top">Back to top ↑</a>
+<div class="socials"><a href="index.html">Головна</a> <a href="index.html#line">Продукти</a> <a href="science.html">Наука</a> <a href="distributors.html">Дистриб’ютори</a> <a href="about.html">Про нас</a></div>
+<div class="socials"><a href="mailto:info@req9.com">info@req9.com</a><a href="https://www.req9.com">www.req9.com</a><a href="about.html#contacts">Instagram</a><a href="about.html#contacts">Facebook</a><a href="about.html#contacts">LinkedIn</a></div>
+<p class="fb"><a href="about.html#write">Зворотний зв'язок:</a> Маєте запитання щодо продукції, наукової бази або протоколів ReQ9? Надішліть нам повідомлення, і наші медичні консультанти дадуть відповідь найближчим часом.</p>
+<span>© 2026 REQPHARMA sp. z o.o.</span>
+<div class="socials"><a href="#top">Політика конфіденційності</a><a href="#top">Умови використання</a><a href="#top">Cookies</a></div>
+<a href="#top" aria-label="Нагору">↑</a>
 </footer>
-
 <div class="spec {{specShow}}" aria-hidden="true">
 <div class="spec-in">
 <div class="spec-frame">
 <div class="spec-chrome"><i></i><i></i><i></i><span>{{specChrome}}</span></div>
-<div class="spec-view {{on.g1}}"><img class="shot" src="assets/scope.jpg" alt="" style="object-position: 60% 45%"><div class="sh"></div><div class="spec-x"></div><div class="spec-y"></div><div class="spec-b"></div><div class="spec-cap"><b>G·P·L</b><span>Кожна 3-тя позиція<br>в колагені</span></div></div>
-<div class="spec-view {{on.g2}}"><img class="shot" src="assets/scope.jpg" alt="" style="object-position: 25% 70%"><div class="sh"></div><div class="spec-x"></div><div class="spec-y"></div><div class="spec-b"></div><div class="spec-cap"><b>BCAA</b><span>Leu · Ile · Val<br>білковий метаболізм</span></div></div>
-<div class="spec-view {{on.g3}}"><img class="shot" src="assets/scope.jpg" alt="" style="object-position: 85% 25%"><div class="sh"></div><div class="spec-x"></div><div class="spec-y"></div><div class="spec-b"></div><div class="spec-cap"><b>ELN</b><span>Ala + Gly · Pro · Val<br>профіль еластину</span></div></div>
-<div class="spec-view {{on.g4}}"><img class="shot" src="assets/scope.jpg" alt="" style="object-position: 40% 55%"><div class="sh"></div><div class="spec-x"></div><div class="spec-y"></div><div class="spec-b"></div><div class="spec-cap"><b>S·C</b><span>Ser · Cys<br>метаболізм і захист</span></div></div>
-<div class="spec-view {{on.r1}}"><div class="spec-txt"><p>ГК 1218 кДа захищала фібробласти від оксидативного стресу сильніше, ніж 176 і 668 кДа; ефект зростав із концентрацією.</p><span>Висновок: захист клітин від вільнорадикального пошкодження</span></div></div>
-<div class="spec-view {{on.r2}}"><div class="spec-txt"><p>Високомолекулярна ГК пригнічувала активацію NF-κB від AGEs і знижувала IL-1α, IL-6, TNF-α.</p><span>Висновок: клітинний гомеостаз, модуляція запальних сигналів</span></div></div>
-<div class="spec-view {{on.r3}}"><div class="spec-txt"><p>ГК 2290 кДа значуще посилювала проліферацію дермальних фібробластів (NHDF), проліферацію й міграцію кератиноцитів.</p><span>Висновок: клітинна активність, оновлення матриксу</span></div></div>
+<div class="spec-view {{on.r1}}"><div class="spec-txt"><p>ГК 1,2 МДа ефективно захищає фібробласти від пошкодження в умовах оксидативного стресу.</p><span>Presti D. &amp; Scott J.E. (1994)</span></div></div>
+<div class="spec-view {{on.r2}}"><div class="spec-txt"><p>Високомолекулярна ГК пригнічує запальні цитокіни (IL-1α, IL-6, TNF-α) та підтримує клітинний гомеостаз.</p><span>Neumann A. et al. (1999)</span></div></div>
+<div class="spec-view {{on.r3}}"><div class="spec-txt"><p>ГК 2,4 МДа значуще посилює проліферацію та міграцію дермальних фібробластів людини (NHDF) і кератиноцитів.</p><span>Kawano Y. et al. (2021)</span></div></div>
 </div>
 <div class="spec-label">{{specLabel}}</div>
 </div>
@@ -168,17 +177,17 @@
 
 class Component extends DCLogic {
 componentDidMount() { if (typeof window !== 'undefined' && window.REQ9Lab && this._root) this._fx = window.REQ9Lab.mount(this._root); }
-componentWillUnmount() { if (this._fx) this._fx(); }
+componentWillUnmount() { this._dead = true; if (this._fx) this._fx(); if (this._aeIo) this._aeIo.disconnect(); (this._t || []).forEach((id) => clearTimeout(id)); }
+
 renderVals() {
 if (!this._r) {
-const en = {}; ['g1','g2','g3','g4','r1','r2','r3'].forEach((k) => { en[k] = () => this.setState({ hv: k }); });
-this._r = { en, lv: () => this.setState({ hv: null }), rootRef: (el) => { this._root = el; } };
+const en = {}; ['r1','r2','r3'].forEach((k) => { en[k] = () => this.setState({ hv: k }); });
+this._r = { en, lv: () => this.setState({ hv: null }), rootRef: (el) => { this._root = el; }, submit: (e) => { e.preventDefault(); this.setState({ sent: true }); } };
 }
-const M = { g1: ['001', 'GRP/001', 'Specimen / Collagen triad'], g2: ['002', 'GRP/002', 'Specimen / BCAA'], g3: ['003', 'GRP/003', 'Specimen / Elastin'], g4: ['004', 'GRP/004', 'Specimen / Ser · Cys'], r1: ['001', 'SRC/001', 'Finding / 1994'], r2: ['002', 'SRC/002', 'Finding / 1999'], r3: ['003', 'SRC/003', 'Finding / 2021'] };
+const M = { r1: ['001', 'Presti & Scott · 1994', 'ГК 1,2 МДа'], r2: ['002', 'Neumann et al. · 1999', 'ГК'], r3: ['003', 'Kawano et al. · 2021', 'ГК 2,4 МДа'] };
 const hv = this.state && this.state.hv; const m = M[hv] || ['', '', ''];
 const on = {}; Object.keys(M).forEach((k) => { on[k] = k === hv ? 'on' : ''; });
-const grp = hv ? (hv[0] === 'g' ? 'comp' : 'res') : '';
-return Object.assign({}, this._r, { on, hov: { comp: grp === 'comp' ? 'is-hovering' : '', res: grp === 'res' ? 'is-hovering' : '' }, ghost: m[0], specLabel: m[1], specChrome: m[2], specShow: hv ? 'show' : '' });
+return Object.assign({}, this._r, { on, hov: hv ? 'is-hovering' : '', ghost: m[0], specLabel: m[1], specChrome: m[2], specShow: hv ? 'show' : '', sent: !!(this.state && this.state.sent) });
 }
 }
 
