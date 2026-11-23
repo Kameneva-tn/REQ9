@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>REQ9 — дистриб’ютори</title>
+<meta name="description" content="REQ9 Amino Code — 9 амінокислот і дві фракції гіалуронової кислоти. Медичний виріб класу III, Made in Italy.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/logo-req9-white.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&amp;family=Roboto+Mono:wght@400;500&amp;display=swap">
+<style>body{margin:0;background:#020202}</style>
+<link rel="stylesheet" href="assets/req9-lab.css">
+<script src="assets/req9-lab.js"></script>
+<script src="assets/dc-lite.js"></script>
+</head>
+<body>
+<div id="dc-root">
+<div class="pg" id="top" data-dcref="rootRef">
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="nav">
+<a class="nav-brand" href="index.html" aria-label="REQ9 — головна"><img src="assets/logo-req9-white.png" alt="REQ9" style="height: 20px; width: auto; display: block"><em>// Amino Code™</em></a>
+<nav class="nav-links" aria-label="Головне меню">
+<a href="index.html">Головна</a>
+<a href="product.html">Продукти</a>
+<a href="science.html">Наука</a>
+<a class="cur" href="distributors.html">Дистриб’ютори</a>
+<a href="about.html">Про бренд</a>
+</nav>
+<a class="btn btn-s nav-cta" href="#join" data-magnet="1">Стати дистриб’ютором</a>
+</header>
+
+<!-- 4.1 intro -->
+<section class="lhero top" style="min-height: 820px">
+<div class="scroll-cue">Scroll</div>
+<p class="eyebrow">REQ Pharma / Distribution network</p>
+<h1 style="font-weight: 900; text-transform: uppercase; font-size: clamp(60px, 10.6vw, 170px); line-height: .86; letter-spacing: -.045em; margin-top: 3vh" aria-label="Отримати код у своїй країні.">
+<span class="ln lh"><span>Отримати <span class="acid">код</span></span></span>
+<span class="ln lh"><span class="hollow">у своїй</span></span>
+<span class="ln lh"><span>країні<span class="acid">.</span></span></span>
+</h1>
+<div class="hero-sub">
+<p class="rv">Офіційна дистриб’юторська мережа REQ Pharma. Знайдіть дистриб’ютора у своїй країні для отримання <b>сертифікованої продукції, навчальних протоколів</b> і комерційних умов співпраці.</p>
+<div class="hero-meta rv">Сценарій <i>01</i> — лікар шукає постачальника<br>Сценарій <i>02</i> — компанія хоче стати партнером</div>
+</div>
+<div class="btns rv">
+<a class="btn" href="#find" data-magnet="1"><span>Обрати країну</span><i>↓</i></a>
+<a class="btn btn-o" href="#join"><span>Стати дистриб’ютором</span><i>→</i></a>
+</div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+<div class="ticker-track">
+<span>Сертифікована продукція</span><span class="ghost">Навчальні протоколи</span><span>MDR Class III</span><span class="ghost">Made in Italy</span>
+<span>Сертифікована продукція</span><span class="ghost">Навчальні протоколи</span><span>MDR Class III</span><span class="ghost">Made in Italy</span>
+<span>Сертифікована продукція</span><span class="ghost">Навчальні протоколи</span><span>MDR Class III</span><span class="ghost">Made in Italy</span>
+</div>
+</div>
+
+<!-- 4.2 countries & contacts -->
+<section class="dist" id="find">
+<div>
+<p class="eyebrow">4.2 // Країни і контакти</p>
+<h2 class="rv" style="font-weight: 900; text-transform: uppercase; font-size: clamp(44px, 6.4vw, 100px); line-height: .88; letter-spacing: -.045em; margin-top: 3vh">Оберіть<br><em style="font-style: italic; color: #E6FF6B">країну</em></h2>
+<div class="fld rv" style="margin-top: 6vh; max-width: 420px">
+<label for="country">Країна</label>
+<select id="country" data-dcev-change="pickCountry">
+<option value="ua">Україна</option>
+<option value="pl">Польща</option>
+<option value="it">Італія</option>
+<option value="de">Німеччина</option>
+<option value="ro">Румунія</option>
+<option value="cz">Чехія</option>
+</select>
+</div>
+<p class="count rv" style="text-align: left; margin-top: 4vh">Контакти оновлюються після вибору.<br>Телефон і email клікабельні.</p>
+</div>
+<div class="dcard rv">
+<div class="dcard-h"><span>Official distributor</span><b>{{code}}</b></div>
+<div class="dcard-b">
+<h3>{{countryName}}</h3>
+<div class="kv2"><span>Назва</span><span>[Назва дистриб’ютора]</span></div>
+<div class="kv2"><span>Телефон</span><span>[+00 000 000 00 00]</span></div>
+<div class="kv2"><span>Email</span><span>[email дистриб’ютора]</span></div>
+<div class="kv2"><span>Адреса</span><span>[Адреса]</span></div>
+<div class="kv2"><span>Години роботи</span><span>[Пн–Пт 09:00–18:00] · {{tz}}</span></div>
+<div class="kv2"><span>Сайт</span><span>[за наявності]</span></div>
+</div>
+<div class="acts">
+<a class="btn btn-s" href="#find"><span>Подзвонити</span></a>
+<a class="btn btn-s btn-o" href="#find"><span>Написати email</span></a>
+<a class="btn btn-s btn-o" href="#find"><span>Перейти на сайт</span><i>↗</i></a>
+</div>
+</div>
+</section>
+
+<!-- 4.3 partnership -->
+<section class="mani">
+<p class="eyebrow">4.3 // Партнерство</p>
+<div>
+<h3 class="scrub"><span class="w">Партнерство</span> <span class="w">з</span> <span class="w">REQ</span> <span class="w">Pharma.</span> <span class="dimw"><span class="w">Ексклюзивні</span> <span class="w">умови</span></span> <em><span class="w">дистрибуції</span> <span class="w">лінійки</span> <span class="w">REQ9.</span></em></h3>
+<div class="mani-rules">
+<div class="mani-rule"><b>R.01</b><p><strong><span class="wm"><span>Ексклюзивні</span></span> <span class="wm"><span>умови.</span></span></strong> <span class="w">Дистрибуція</span> <span class="w">інноваційної</span> <span class="w">лінійки</span> <span class="w">REQ9</span> <span class="w">у</span> <span class="w">вашому</span> <span class="w">регіоні.</span></p></div>
+<div class="mani-rule"><b>R.02</b><p><strong><span class="wm"><span>Маркетинговий</span></span> <span class="wm"><span>супровід.</span></span></strong> <span class="w">Повний</span> <span class="w">комплект</span> <span class="w">матеріалів</span> <span class="w">для</span> <span class="w">запуску</span> <span class="w">і</span> <span class="w">просування.</span></p></div>
+<div class="mani-rule"><b>R.03</b><p><strong><span class="wm"><span>Сертифіковані</span></span> <span class="wm"><span>семінари.</span></span></strong> <span class="w">Навчання</span> <span class="w">лікарів</span> <span class="w">і</span> <span class="w">протоколи</span> <span class="w">застосування.</span></p></div>
+<div class="mani-rule"><b>R.04</b><p><strong><span class="wm"><span>Юридична</span></span> <span class="wm"><span>підтримка.</span></span></strong> <span class="w">Відповідно</span> <span class="w">до</span> <span class="w">MDR</span> <span class="w">Class</span> <span class="w">III.</span></p></div>
+</div>
+</div>
+</section>
+
+<!-- 4.4 form -->
+<section class="fsec" id="join">
+<div>
+<p class="eyebrow">4.4 // Заявка</p>
+<h2 class="rv">Стати<br><em>дистриб’ютором</em></h2>
+<p class="lead rv">Заповніть форму, щоб отримати офіційну комерційну пропозицію та умови співпраці у вашому регіоні.</p>
+</div>
+<form class="fm rv" data-dcev-submit="submit">
+<div data-dcif="sent" style="display:none">
+<div class="ok"><b>Заявку надіслано</b><span class="count" style="text-align: left">Менеджер REQ Pharma зв’яжеться з вами найближчим часом.</span></div>
+</div>
+<div class="fld"><label for="f-name">Ім’я *</label><input id="f-name" name="name" type="text" required="required" placeholder="Ваше ім’я"></div>
+<div class="fld"><label for="f-co">Компанія *</label><input id="f-co" name="company" type="text" required="required" placeholder="Назва компанії"></div>
+<div class="fld"><label for="f-cn">Країна *</label><input id="f-cn" name="country" type="text" required="required" placeholder="Країна"></div>
+<div class="fld"><label for="f-em">Email *</label><input id="f-em" name="email" type="email" required="required" placeholder="name@company.com"></div>
+<div class="fld"><label for="f-ph">Телефон</label><input id="f-ph" name="phone" type="tel" placeholder="+00 000 000 00 00"></div>
+<div class="fld"><label for="f-src">Джерело</label><input id="f-src" type="text" value="Стати дистриб’ютором" readonly="readonly"></div>
+<div class="fld w2"><label for="f-msg">Повідомлення</label><textarea id="f-msg" name="message" placeholder="Регіон, досвід у дистрибуції естетичної медицини"></textarea></div>
+<label class="consent"><input type="checkbox" required="required"><span>Погоджуюсь на обробку персональних даних відповідно до [Політики конфіденційності].</span></label>
+<div class="fm-foot"><span class="count" style="text-align: left">* обов’язкові поля</span><button class="btn" type="submit" data-magnet="1"><span>Надіслати заявку на співпрацю</span><i>→</i></button></div>
+</form>
+</section>
+
+<footer class="foot">
+<span>© 2026 REQ Pharma · Made in Italy · Медичний виріб класу III</span>
+<div class="socials"><a href="about.html">info@req9.com</a><a href="about.html">Instagram</a><a href="about.html">Facebook</a><a href="about.html">LinkedIn</a><a href="#top">Політика конфіденційності</a><a href="#top">Умови</a><a href="#top">Cookies</a></div>
+<a href="#top">Back to top ↑</a>
+</footer>
+
+</div>
+</div>
+<script>
+
+class Component extends DCLogic {
+componentDidMount() { if (typeof window !== 'undefined' && window.REQ9Lab && this._root) this._fx = window.REQ9Lab.mount(this._root); }
+componentWillUnmount() { if (this._fx) this._fx(); }
+renderVals() {
+if (!this._r) {
+this._r = {
+rootRef: (el) => { this._root = el; },
+pickCountry: (e) => this.setState({ c: e.target.value }),
+submit: (e) => { e.preventDefault(); this.setState({ sent: true }); }
+};
+}
+const C = { ua: ['Україна', 'UA', 'UTC+2'], pl: ['Польща', 'PL', 'UTC+1'], it: ['Італія', 'IT', 'UTC+1'], de: ['Німеччина', 'DE', 'UTC+1'], ro: ['Румунія', 'RO', 'UTC+2'], cz: ['Чехія', 'CZ', 'UTC+1'] };
+const c = C[(this.state && this.state.c) || 'ua'];
+return Object.assign({}, this._r, { countryName: c[0], code: c[1], tz: c[2], sent: !!(this.state && this.state.sent) });
+}
+}
+
+window.dcMount(Component, document.getElementById('dc-root'));
+</script>
+</body>
+</html>
